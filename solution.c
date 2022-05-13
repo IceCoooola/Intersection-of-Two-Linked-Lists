@@ -21,8 +21,6 @@ struct ListNode *getIntersectionNode(struct ListNode *headA, struct ListNode *he
         countB++;
     }
     int steps = abs(countA - countB);
-    if(listA == listB)
-    {
         if(countA > countB)
         {
             while(steps--)
@@ -44,5 +42,3 @@ struct ListNode *getIntersectionNode(struct ListNode *headA, struct ListNode *he
         }
         return headA;
     }
-    return NULL;
-}
